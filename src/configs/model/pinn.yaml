@@ -1,0 +1,10 @@
+_target_: src.model.pinn.model.PINN
+
+input_dim: 2 # t, x
+hidden_dims: [64, 64, 64]
+output_dim: 1 # u
+output_names: ["u"]
+activation: "tanh"
+init_mode: "normal"
+dtype: "float32"
+rngs: 0

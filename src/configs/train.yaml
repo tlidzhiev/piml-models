@@ -1,0 +1,17 @@
+hydra:
+  run:
+    dir: ${writer.log_dir}
+
+defaults:
+  - _self_
+  - dataset: heat1d
+  - model: pinn
+  - optimizer: adam
+  - lr_scheduler: constant
+  - writer: cometml
+
+training:
+  num_steps: 10000
+  save_step: 500
+  max_grad_norm: null
+  checkpoint_dir: ${writer.log_dir}/checkpoints

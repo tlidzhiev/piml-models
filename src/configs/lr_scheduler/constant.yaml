@@ -1,0 +1,2 @@
+_target_: optax.schedules.constant_schedule
+value: 0.001
